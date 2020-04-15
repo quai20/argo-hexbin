@@ -46,8 +46,8 @@
 	    radius : 30,
 	    opacity: 0.5,
 	    duration: 100,
-	    colorScaleExtent: [ 1, 1500 ],
-	    radiusScaleExtent: [ 1, 1500 ],
+	    colorScaleExtent: [ 1, 6000 ],
+	    radiusScaleExtent: [ 1, 6000 ],
 	    colorDomain: null,
 	    radiusDomain: null,
         colorRange: ['#fed976','#feb24c','#fd8d3c','#fc4e2a','#e31a1c','#bd0026','#800026'],
@@ -95,16 +95,16 @@
    			zz=map.getZoom()		    
 			switch (zz) {
 				case 3:
-					this_max=1500;
+					this_max=6000;
 					break;
 				case 4:
-					this_max=1000;
+					this_max=2500;
 					break;
 				case 5:
 				this_max=750;
 					break;
 				case 6:
-				this_max=500;
+				this_max=400;
 					break;
 			}	
 			hexLayer.colorScaleExtent([ 1 , this_max ])
