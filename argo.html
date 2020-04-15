@@ -92,8 +92,8 @@
 		
 		map.on('zoomend', function() {
    			zz=map.getZoom()
-			hexLayer.colorScaleExtent([ 1 , 1500/(zz-2) ])
-			hexLayer.radiusScaleExtent([ 1 , 1500/(zz-2) ])   
+			hexLayer.colorScaleExtent([ 1 , 1500/(zz-3) ])
+			hexLayer.radiusScaleExtent([ 1 , 1500/(zz-3) ])   
 			hexLayer.redraw()
 			//console.log('ok')
 		});
